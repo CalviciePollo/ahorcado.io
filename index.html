@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Ahorcado Anime</h1>
+        </header>
+
+        <div id="container">
+            <div id="lateral">
+                <h2>Estadísticas:</h2>
+                <button class="reiniciar" id="botonReiniciar" onclick="reiniciarJuego()">Reiniciar Juego</button>
+                <div class="stats">
+                    <label>Ganados:</label>
+                    <input type="text" name="txtGanados" id="txtGanados" value="0" disabled>
+                </div>
+                <div class="stats">
+                    <label>Perdidos:</label>
+                    <input type="text" name="txtPerdidos" id="txtPerdidos" value="0" disabled>
+                </div>
+            </div>
+
+            <div id="contenido">
+                <div class="ahorcado">Intentos restantes: <span id="intentosRestantes">10</span></div>
+                <div class="palabra" id="palabra"></div>
+                <div class="mensaje" id="mensaje"></div>
+
+                <div id="img-contenido">
+                    <img src="" id="img-c">
+                </div>
+            </div>
+        </div>
+
+        <div class="teclado" id="teclado">
+            <button onclick="manejarLetraSeleccionada('A')">A</button>
+            <button onclick="manejarLetraSeleccionada('B')">B</button>
+            <button onclick="manejarLetraSeleccionada('C')">C</button>
+            <button onclick="manejarLetraSeleccionada('D')">D</button>
+            <button onclick="manejarLetraSeleccionada('E')">E</button>
+            <button onclick="manejarLetraSeleccionada('F')">F</button>
+            <button onclick="manejarLetraSeleccionada('G')">G</button>
+            <button onclick="manejarLetraSeleccionada('H')">H</button>
+            <button onclick="manejarLetraSeleccionada('I')">I</button>
+            <button onclick="manejarLetraSeleccionada('J')">J</button>
+            <button onclick="manejarLetraSeleccionada('K')">K</button>
+            <button onclick="manejarLetraSeleccionada('L')">L</button>
+            <button onclick="manejarLetraSeleccionada('M')">M</button>
+            <button onclick="manejarLetraSeleccionada('N')">N</button>
+            <button onclick="manejarLetraSeleccionada('O')">O</button>
+            <button onclick="manejarLetraSeleccionada('P')">P</button>
+            <button onclick="manejarLetraSeleccionada('Q')">Q</button>
+            <button onclick="manejarLetraSeleccionada('R')">R</button>
+            <button onclick="manejarLetraSeleccionada('S')">S</button>
+            <button onclick="manejarLetraSeleccionada('T')">T</button>
+            <button onclick="manejarLetraSeleccionada('U')">U</button>
+            <button onclick="manejarLetraSeleccionada('V')">V</button>
+            <button onclick="manejarLetraSeleccionada('W')">W</button>
+            <button onclick="manejarLetraSeleccionada('X')">X</button>
+            <button onclick="manejarLetraSeleccionada('Y')">Y</button>
+            <button onclick="manejarLetraSeleccionada('Z')">Z</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Ahorcado Anime</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
